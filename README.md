@@ -5,10 +5,6 @@ native desktop app (Electron) for **Linux x64** — packaged as a single self-co
 
 No `npm install`, no build step. Unzip and run.
 
-## Preview
-
-![Hermes Desktop running on Linux](Screenshot%20from%202026-07-19%2013-50-05.png)
-
 ## Download
 
 Get the latest release from the **Releases** page:
