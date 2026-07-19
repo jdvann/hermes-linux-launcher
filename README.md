@@ -1,11 +1,18 @@
 # Hermes Desktop for Linux
 
-A **prebuilt, portable** build of the [Hermes Agent](https://github.com/NousResearch/hermes-agent)
-native desktop app (Electron) for **Linux x64** — packaged as a single self-contained ZIP.
+A **prebuilt, portable** desktop app for the [Hermes Agent](https://github.com/NousResearch/hermes-agent),
+packaged as a single self-contained ZIP for **Linux x64**. No `npm install`, no build step — unzip and run.
 
-No `npm install`, no build step. Unzip and run.
+## What it does
 
-## Preview
+When you launch it, Hermes Desktop opens a **desktop window** that lets you drive
+the Hermes Agent from a graphical interface instead of a terminal. Inside that
+window you can **choose a Hermes command** — anything the `hermes` CLI offers —
+and run it without typing it out by hand.
+
+It is a native Electron front-end that talks to the same agent core as the
+`hermes` command-line tool, so whatever you can do in the CLI, you can pick and
+run from this window.
 
 ![Hermes Desktop running on Linux](Screenshot%20from%202026-07-19%2014-10-54.png)
 
@@ -28,15 +35,17 @@ chmod +x launch.sh
 ./launch.sh
 ```
 
-Requirements:
+A window appears. From there, choose the Hermes command you want to run.
 
-- A graphical display (X11 or Wayland).
-- The `hermes` CLI on your `PATH` — the desktop app drives the same agent core
-  as the CLI. Install Hermes Agent first (`pip install hermes-agent` or the
-  official installer) and confirm with `hermes --version`.
-- Standard Linux desktop libraries (present on any normal desktop). If the app
-  fails to start with a "missing shared library" error, install Electron's
-  runtime deps via your package manager (see below).
+> **Requirements**
+>
+> - A graphical display (X11 or Wayland).
+> - The `hermes` CLI on your `PATH` — the desktop app drives the same agent core
+>   as the CLI. Install Hermes Agent first (`pip install hermes-agent` or the
+>   official installer) and confirm with `hermes --version`.
+> - Standard Linux desktop libraries (present on any normal desktop). If the app
+>   fails to start with a "missing shared library" error, install Electron's
+>   runtime deps via your package manager (see below).
 
 ## Why `--no-sandbox`?
 
