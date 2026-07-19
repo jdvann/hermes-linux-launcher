@@ -5,10 +5,12 @@ packaged as a single self-contained ZIP for **Linux x64**. No `npm install`, no 
 
 ## What it does
 
-When you launch it, Hermes Desktop opens a **desktop window** that lets you drive
-the Hermes Agent from a graphical interface instead of a terminal. Inside that
-window you can **choose a Hermes command** — anything the `hermes` CLI offers —
-and run it without typing it out by hand.
+Hermes Desktop lets you **launch Hermes commands without opening a terminal or
+remembering command names**.
+
+When you start it, a **desktop window** opens with the available Hermes commands
+right there — you just pick the one you want and run it. No shell to open, no
+flags to recall, no commands to memorize.
 
 It is a native Electron front-end that talks to the same agent core as the
 `hermes` command-line tool, so whatever you can do in the CLI, you can pick and
@@ -35,7 +37,7 @@ chmod +x launch.sh
 ./launch.sh
 ```
 
-A window appears. From there, choose the Hermes command you want to run.
+A window appears with the available Hermes commands — pick one and run it. No terminal, no memorizing command names.
 
 > **Requirements**
 >
