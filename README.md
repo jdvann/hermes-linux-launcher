@@ -13,7 +13,7 @@ No `npm install`, no build step. Unzip and run.
 
 Get the latest release from the **Releases** page:
 
-👉 https://github.com/jdvann/hermes-desktop-linux/releases/latest
+👉 https://github.com/jdvann/hermes-linux-launcher/releases/latest
 
 The asset `hermes-desktop-linux.zip` (~133 MB) bundles the full Electron runtime,
 Chromium, Node.js, and all native libraries.
@@ -85,7 +85,7 @@ sudo dnf install -y nss nspr atk at-spi2-atk cups-libs libdrm \
 | `hermes-desktop-linux.zip` | **Downloadable release asset** (not committed — see Releases) |
 
 The actual application lives in the ZIP asset on the
-[Releases](https://github.com/jdvann/hermes-desktop-linux/releases) page, since
+[Releases](https://github.com/jdvann/hermes-linux-launcher/releases) page, since
 it is ~133 MB (over GitHub's 100 MB file limit for the repo tree).
 
 ## Build info
